@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin:0;
+}
+
+body{
+    height:100vw;
+    background-color: rgb(212, 120, 0);
+
+}
+#cabecalho{
+left:10%;
+    top:0;
+   background-position: center;
+    width:100%;
+    height: 8vw;
+    animation: imagens 10s  infinite;
+    background-repeat:no-repeat;
+    background-size: 12vw;
+}
+header{
+    animation: animar 2s infinite alternate;
+    display: flex;
+justify-content: center;
+   display: flex;
+    font-size: 4vw;
+    color: white;
+}
+#api h1{
+    font-size:4vw;
+    margin-left:14vw;
+}
+#api h4{
+    font-size: 2vw;
+    margin-left: -6vw;
+}
+#api{
+    
+    margin-left: 13vw;
+    margin-top: -11vw;
+    color:white;
+}
+
+#tipos{
+   top:10vw;
+    margin-left: -8vw;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius:30px;
+background-color: white;
+width: 10vw;
+height: 15vw;
+border:solid black 1px;
+}
+#tipos:hover{
+    animation: tipo 4s cubic-bezier(1,1,1,1) ;
+}
+#tipos hr{
+    width:100%;
+    border-color: black;
+}
+#tipos div{
+    font-size: 2vw;
+    width: 20vw;
+    height: 5vw;
+}
+#a{
+    width: 6vw;
+    height: 6vw;
+}
+a{
+    text-decoration: none;
+    color:black;
+
+}
+@keyframes tipo {
+
+   0%{
+    transform: translatex(0vw);
+   }
+   50%,100%{
+    transform:translatex(8vw) ;
+    animation-play-state: paused;
+   }
+  
+    
+}
+@keyframes animar {
+    0%{
+        transform: translatey(0vw);
+    }
+    100%{
+        transform: translatey(2vw);
+    }
+    
+}
+
+@keyframes imagens {
+    0%{
+        background-image: url(img1.png);
+    }
+    25%{
+        background-image: url(img2.png);
+    }
+    50%{
+        background-image: url(img3.png);
+
+    }
+    75%{
+        background-image: url(img4.png);
+    }
+    100%{
+        background-image: url(img5.png);
+    }
+    
+}
